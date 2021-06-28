@@ -10,8 +10,18 @@ def index(name):
 @route('/')
 @view('index')
 def validator():
-    card_number = request.query["cardNumber"]
     try:
+        card_number = request.query["cardNumber"]
+    except KeyError:
+        response.status = 400
+        card_number = ""
+
+    try:
+        if card_number == "":
+            return {
+                "result": "None",
+                "cardNumber": "Card number not found."
+            }
         issuer = get_issuer(card_number)
         return {"result": issuer,
                 "cardNumber": card_number
