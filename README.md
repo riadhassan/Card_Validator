@@ -1,12 +1,12 @@
-#Bank Card Validator
+# Bank Card Validator
 It is a simple demo project to learn python web micro framework "Bottle".
 
-##What is used in this project?
+## What is used in this project?
 **Python3:** It's high time we should use Python3 instead of Python2.<br>
 **Bottle:** A micro framework of python for web. [bottle](https://bottlepy.org/docs/dev/) <br>
 **pytest:** Py test is used for testing our app. [pytest](https://docs.pytest.org/en/6.2.x/)
 
-##How To Use This
+## How To Use This
 1. Run `pip install -r requirements.txt` to install dependencies
 2. Run `python -m web.app`
 3. Navigate to http://localhost:8080/ in your browser
